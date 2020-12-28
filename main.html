@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <title>Cafemore::카페모아bb</title>
     <style>
+
+      /* 둘러싸는거? */
       #container { 
         text-align: left;
         width: 940px;
         margin: 0px left;
         padding: 0px;
       }
+
+      /* 로고 */
       #header {
         background-color: white;
         text-align: left;
       }
+
       #header ul {
         margin : 0;
         padding : 0;
@@ -24,20 +29,25 @@
         list-style-type : none; 
         padding : 15px 15px; 
       }
+
       #header ul li a{
         text-decoration : none; 
       }
+
+      /* 지도 */
       #content {
         width: 600px;
         padding: 5px;
-        margin:0px right;
+        margin-left: 40px;
         margin-bottom: 20px;
         height: 300px;
         float: left;
         border: 1px solid #bcbcbc;
       }
+      /* top 10 */
       #sidebar {
         width: 260px;
+        height: 300px;
         padding: 5px;
         margin-bottom: 5px;
         float: right;
@@ -56,20 +66,22 @@
         color:blue;
         background-color: lightgray;
       }
+
+      /* 로고 */
       img
       {
-        width: 340px;
-        height: 150px;
-        float:right;
+        width: 200px;
+        height: auto;
       }
+
     </style>
   </head>
   <body>
     <div id="container";>
       <div id="header">
         <ul>
+          <!--로고 이미지-->
           <li><img src="logo.png"></li>
- 
         </ul>
       </div>
       <br>
@@ -78,13 +90,7 @@
         </div>
         <div id="sidebar">
           <h2>TOP10</h2>
-          <nav>
-          <ul>
-            <li><a href="https://eclass.dongguk.edu/index.jsp">이클래스</a></li>
-            <li><a href="https://mail.dongguk.edu/account/login.do">웹메일</a></li>
-            <li><a href="https://lib.dongguk.edu">중앙도서관</a></li>
-          </ul>
-         </nav>
+
         </div>
       <div id="footer">
         <p><a href="https://ko.wikisource.org/wiki/%EB%8F%99%EB%B0%B1%EA%BD%83">본문 보러가기</a></p>
