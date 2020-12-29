@@ -10,7 +10,8 @@
 background-color: white;
 margin : 0px left;
 text-align: left;
-border-bottom: 1px solid lightgray;
+border-bottom: 1px solid rgb(223, 223, 223);
+box-shadow: 0 4px 9px -4px rgba(214, 214, 214);
 }
 
 #footer {
