@@ -3,86 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Cafemore::카페모아bb</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-
-      /* 둘러싸는거? */
-      #container { 
-        text-align: left;
-        width: 940px;
-        margin: 0px left;
-        padding: 0px;
-      }
-
-      /* 로고 */
-      #header {
-        background-color: white;
-        text-align: left;
-      }
-
-      #header ul {
-        margin : 0;
-        padding : 0;
-        width : 567px; 
-      }
-      #header ul li {
-        display : inline-block; 
-        list-style-type : none; 
-        padding : 15px 15px; 
-      }
-
-      #header ul li a{
-        text-decoration : none; 
-      }
-
       /* 지도 */
       #content {
-        width: 600px;
+        width: 800px;
         padding: 5px;
         margin-left: 40px;
         margin-bottom: 20px;
-        height: 300px;
+        height: 400px;
         float: left;
         border: 1px solid #bcbcbc;
       }
       /* top 10 */
       #sidebar {
-        width: 260px;
-        height: 300px;
+        width: 500px;
+        height: 560px;
         padding: 5px;
         margin-bottom: 5px;
-        float: right;
+        margin-left: 1000px;
         border: 1px solid #bcbcbc;
       }
-      #sidebar ul li {
-        list-style-type : none; 
-      }
-      #footer {
-        position:fixed; 
-        left:0px; 
-        bottom:0px; 
-        height:100px; 
-        width:100%; 
-        border:2px solid lightgray;
-        color:blue;
-        background-color: lightgray;
-      }
-
-      /* 로고 */
-      img
-      {
-        width: 200px;
-        height: auto;
-      }
-
     </style>
   </head>
   <body>
     <div id="container";>
       <div id="header">
-        <ul>
-          <!--로고 이미지-->
-          <li><a href="main.html"><img src="logo.png" ></a></li>
-        </ul>
+        <!--로고 이미지-->
+        <a href="main.html"><img src="logo.png" ></a>
       </div>
       <br>
       <div id="content">
@@ -90,10 +38,10 @@
         </div>
         <div id="sidebar">
           <h2>TOP10</h2>
-          <p><a href="info.html">카페 정보랑 연결될걸?</a></p>
+          <p><a href="info.html">카페 정보랑 연결?</a></p>
         </div>
       <div id="footer">
-        <p><a href="https://ko.wikisource.org/wiki/%EB%8F%99%EB%B0%B1%EA%BD%83">본문 보러가기</a></p>
+        <p><a href="https://github.com/CaffeMoa/cafemore">깃허브 보러가기</a></p>
       </div>
     </div>
   </body>

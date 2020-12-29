@@ -1,0 +1,30 @@
+/* 둘러싸는거? */
+#container { 
+    text-align: left;
+    margin: 0px left;
+    padding: 0px;
+  }
+
+/* 로고 */
+#header {
+background-color: white;
+margin-left: 10px;
+text-align: left;
+}
+
+#footer {
+    position:fixed; 
+    left:0px; 
+    bottom:0px; 
+    height:100px; 
+    width:100%; 
+    border:2px solid lightgray;
+    color:blue;
+    background-color: lightgray;
+  }
+/* 로고 */
+img
+{
+width: 200px;
+height: auto;
+}
