@@ -8,8 +8,9 @@
 /* 로고 */
 #header {
 background-color: white;
-margin-left: 10px;
+margin : 0px left;
 text-align: left;
+border-bottom: 1px solid lightgray;
 }
 
 #footer {
