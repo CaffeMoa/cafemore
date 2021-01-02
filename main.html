@@ -5,24 +5,37 @@
     <title>Cafemore::카페모아bb</title>
     <link rel="stylesheet" href="style.css">
     <style>
+      div{
+        width: 100%;
+      }
+
+      div.left{
+        width: 60%;
+        float: left;
+        margin-left: 45px;
+        /* border: 1px solid #bcbcbc; */
+      }
+
+      div.right{
+        width: 30%;
+        float: right;
+        margin-right: 45px;
+        /* border: 1px solid #bcbcbc; */
+      }
       /* 지도 */
       #content {
-        width: 700px;
+        /* width: 700px; */
         padding: 5px;
-        margin-left: 50px;
         margin-bottom: 20px;
         height: 400px;
-        float: left;
         border: 1px solid #bcbcbc;
       }
       /* top 10 */
       #sidebar {
-        width: 500px;
+        /* width: 500px; */
         height: 560px;
         padding: 5px;
         margin-bottom: 5px;
-        margin-right: 100px;
-        float: right;
         border: 1px solid #bcbcbc;
       }
     </style>
@@ -41,14 +54,18 @@
       <br>
       <br>
       <br>
-      <div id="content">
-        여기에 지도 넣기 -- :~~)
+      <div class="left">
+        <div id="content">
+          여기에 지도 넣기 -- :~~)
         </div>
+      </div>
+      <div class="right">
         <div id="sidebar">
           <h2>TOP10</h2>
           <p><a href="info.html">카페 정보랑 연결?</a></p>
           <br><p><a href="profile.html">프로필원래 위엔데</a></p>
         </div>
+      </div>
       <div id="footer">
         <p><a href="https://github.com/CaffeMoa/cafemore">깃허브 보러가기</a></p>
       </div>
