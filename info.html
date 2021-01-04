@@ -24,18 +24,34 @@
 
       /* 왼쪽-가게 메인 사진, 별 */
       #content {
-      text-align: center;
-      padding: 5px;
-      margin-top: 200px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 200px;
       }
 
       /* 오른쪽 */
       #sidebar {
-      width: 800px;
-      height: 300px;
-      padding: 10px;
-      margin-top: 20px;
-      border: 1px solid #bcbcbc;
+        /* position: relative; */
+        width: 95%;
+        height: 300px;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      @media(max-width:930px){
+        #content{
+          margin-top: 10px;
+          position: relative;
+          left: 300px;
+          float:none;
+        }
+        div.right{
+          margin-top: 300px;
+          width: 100%;
+          position: relative;
+          left: 1.5%;
+          float:none;
+        }
       }
     </style>
   </head>

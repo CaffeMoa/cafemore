@@ -54,15 +54,16 @@
         }
 
         div.left{
-            width: 69%;
+            width: 55%;
             float: left;
             /* border: 1px solid #bcbcbc; */
         }
 
         div.right{
-            width: 30%;
+            width: 40%;
             float: right;
-            margin-right: 5px;
+            margin-right: 15px;
+            margin-bottom: 30px;
             /* border: 1px solid #bcbcbc; */
         }
         /* 지도 */
@@ -81,6 +82,20 @@
             margin-bottom: 5px;
             border: 1px solid #bcbcbc;
         }
+        @media(max-width:1000px){
+            div.left{
+                width: 95%;
+                float: none;
+                position: relative;
+                margin: 10px;
+            }
+            div.right{
+                float: none;
+                width: 90%;
+                position: relative;
+                left: 20px;
+            }
+      }
     </style>
 </head>
 <body>
@@ -97,7 +112,7 @@
     <br>
     <div class="left">
       <div id = "select">
-      <select id ="sl"style="position:absolute;right:577px">
+      <select id ="sl"style="position: left">
         <option>강남구</option>
         <option>강동구</option>
         <option>강북구</option>
@@ -335,10 +350,10 @@
     <div class="right">
       <div id = "search">
         <input id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
-        <button id ="sb"><img id="search_image" src="img/search.png"  width=25px;></button>
+        <button id ="sb"><img id="search_image" src="img/search.png"  width=80%;></button>
       </div>
       <br>
-        <div id="sidebar">
+        <div id="sidebar" >
             <h2>TOP10</h2>
             <p><a href="info.html">할리스카페 정보</a></p>
         </div>
