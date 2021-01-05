@@ -5,81 +5,47 @@
     <meta charset="utf-8">
     <title>Cafemore</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
 
-#bg {
-  top: 0; 
-  left: 0; 
-    
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
-}
-        div{
-            width: 100%;
-        }
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
 
-        div.left{
-            width: 55%;
-            float: left;
-            /* border: 1px solid #bcbcbc; */
-        }
-
-        div.right{
-            width: 40%;
-            float: right;
-            margin-bottom: 30px;
-            /* border: 1px solid #bcbcbc; */
-        }
-        /* 지도 */
-        #content {
-            /* width: 700px; */
-            padding: 5px;
-            margin-bottom: 20px;
-            height: 650px;
-            /* border: 1px solid #bcbcbc; */
-        }
-        /* top 10 */
-        #sidebar {
-            /* width: 500px; */
-            height: 750px;
-            padding: 5px;
-            margin-bottom: 5px;
-            border: 1px solid #bcbcbc;
-        }
-        @media(max-width:1000px){
-            div.left{
-                width: 100%;
-                float: none;
-                position: relative;
-            }
-            div.right{
-                float: none;
-                width: 100%;
-                position: relative;
-            }
-      }
-    </style>
+     <!-- Custom fonts for this template -->
+     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+ 
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet"> 
 </head>
 <body>
-<div id="container";>
-    <div id="header">
-        <!--로고 이미지 -->
-        <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
-        <!--카페 검색 -->
-        <a href="search.html"><img src="img/cafesearch.png" onmouseover="this.src='img/cafesearch_hover.png'"
-            onmouseout="this.src='img/cafesearch.png'" width=130px;></a>
-        <!--회원가입-->
-        <a href="login.html" style="position: absolute; right: 80px; top: 30px;"><img src="img/loginfont.png" onmouseover="this.src='img/loginfont_hover.png'"
-            onmouseout="this.src='img/loginfont.png'" width=130px;></a>
-        <!--프로필-->
-        <a href="profile.html"><img id="profile_image" src="img/profile.png" 
-                                    width=40px; style="position: absolute; right: 20px; top: 20px; "></a>
+    <div id="container";>
+        <div id="header">
+            <!--로고 이미지 -->
+            <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
+            <!--카페 검색 -->
+            <a href="search.html" style="position: absolute; left: 200px; top: 7px;"><img src="img/cafesearch.png" onmouseover="this.src='img/cafesearch_hover.png'"
+                onmouseout="this.src='img/cafesearch.png'" width=130px;></a>
+            <!--회원가입-->
+            <a href="login.html" style="position: absolute; right: 80px; top: 22px;"><img src="img/loginfont.png" onmouseover="this.src='img/loginfont_hover.png'"
+                onmouseout="this.src='img/loginfont.png'" width=130px;></a>
+            <!--프로필-->
+            <a href="profile.html"><img id="profile_image" src="img/profile.png" 
+                                        width=40px; style="position: absolute; right: 20px; top: 10px; "></a>
+        </div>
+        <!-- Page Header -->
+        <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>내 눈물 모아~</h1>
+                    <span class="subheading">caffe more & more</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>
     </div>
-    
-</div>
-<div class="bgimg" id="main" ><img src="img/main.jpg">
-</div>
-
 </body>
 </html>
