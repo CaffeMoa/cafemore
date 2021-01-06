@@ -23,6 +23,7 @@
             margin-bottom: 30px;
             /* border: 1px solid #bcbcbc; */
         }
+        
         /* 지도 */
         #content {
             /* width: 700px; */
@@ -53,10 +54,13 @@
                 left: 20px;
             }
       }
+      ul{
+            list-style:none;
+        }
     </style>
 </head>
 <body>
-<div id="container";>
+<div id="container">
     <div id="header">
         <!--로고 이미지 -->
         <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
@@ -108,7 +112,6 @@
                 <ul id="category">
                     <li id="CE7" data-order="4">
                         <span class="category_bg cafe"></span>
-                        카페
                     </li>
                 </ul>
             </div>
@@ -123,7 +126,7 @@
 
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
-                        center: new kakao.maps.LatLng(37.561307, 126.994928), // 지도의 중심좌표
+                        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
                         level: 5 // 지도의 확대 레벨
                     };
 
@@ -173,6 +176,7 @@
 
                     ps.categorySearch(currCategory, placesSearchCB, {useMapBounds:true});
                 }
+
 
                 // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
                 function placesSearchCB(data, status, pagination) {
@@ -261,48 +265,17 @@
                     placeOverlay.setMap(map);
                 }
 
-
                 // 각 카테고리에 클릭 이벤트를 등록합니다
                 function addCategoryClickEvent() {
                     var category = document.getElementById('category'),
                         children = category.children;
 
-                    for (var i=0; i<children.length; i++) {
-                        children[i].onclick = onClickCategory;
-                    }
-                }
-
-                // 카테고리를 클릭했을 때 호출되는 함수입니다
-                function onClickCategory() {
-                    var id = this.id,
-                        className = this.className;
-
                     placeOverlay.setMap(null);
 
-                    if (className === 'on') {
-                        currCategory = '';
-                        changeCategoryClass();
-                        removeMarker();
-                    } else {
-                        currCategory = id;
-                        changeCategoryClass(this);
-                        searchPlaces();
-                    }
-                }
+                    currCategory = 'CE7';
+                    category.className = 'on';
 
-                // 클릭된 카테고리에만 클릭된 스타일을 적용하는 함수입니다
-                function changeCategoryClass(el) {
-                    var category = document.getElementById('category'),
-                        children = category.children,
-                        i;
-
-                    for ( i=0; i<children.length; i++ ) {
-                        children[i].className = '';
-                    }
-
-                    if (el) {
-                        el.className = 'on';
-                    }
+                    searchPlaces();
                 }
             </script>
         </div>
