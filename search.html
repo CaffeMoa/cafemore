@@ -6,31 +6,18 @@
     <title>Cafemore</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        div{
+        div.container{
             width: 100%;
         }
-
-        div.left{
+        .left{
             width: 55%;
             float: left;
-            /* border: 1px solid #bcbcbc; */
         }
-
-        div.right{
+        .right{
             width: 40%;
             float: right;
             margin-right: 15px;
             margin-bottom: 30px;
-            /* border: 1px solid #bcbcbc; */
-        }
-        
-        /* 지도 */
-        #content {
-            /* width: 700px; */
-            padding: 5px;
-            margin-bottom: 20px;
-            height: 650px;
-            /* border: 1px solid #bcbcbc; */
         }
         /* top 10 */
         #sidebar {
@@ -60,7 +47,6 @@
     </style>
 </head>
 <body>
-<div id="container">
     <div id="header">
         <!--로고 이미지 -->
         <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
@@ -75,47 +61,47 @@
                                     width=40px; style="position: absolute; right: 20px; top: 20px; "></a>
     </div>
     <br>
-    <div class="left">
-        <div id = "select">
-            <select id ="sl"style="position: left">
-                <option>강남구</option>
-                <option>강동구</option>
-                <option>강북구</option>
-                <option>강서구</option>
-                <option>관악구</option>
-                <option>광진구</option>
-                <option>구로구</option>
-                <option>금천구</option>
-                <option>노원구</option>
-                <option>도봉구</option>
-                <option>동대문구</option>
-                <option>동작구</option>
-                <option>마포구</option>
-                <option>서대문구</option>
-                <option>서초구</option>
-                <option>성동구</option>
-                <option>성북구</option>
-                <option>송파구</option>
-                <option>양천구</option>
-                <option>영등포구</option>
-                <option>용산구</option>
-                <option>은평구</option>
-                <option>종로구</option>
-                <option>중구</option>
-                <option>중랑구</option>
-            </select>
-        </div>
-        <br>
-        <div id="content">
+    <div class="container">   
+        <div class="left">
+            <div id = "select">
+                <select id ="sl"style="position: left">
+                    <option>강남구</option>
+                    <option>강동구</option>
+                    <option>강북구</option>
+                    <option>강서구</option>
+                    <option>관악구</option>
+                    <option>광진구</option>
+                    <option>구로구</option>
+                    <option>금천구</option>
+                    <option>노원구</option>
+                    <option>도봉구</option>
+                    <option>동대문구</option>
+                    <option>동작구</option>
+                    <option>마포구</option>
+                    <option>서대문구</option>
+                    <option>서초구</option>
+                    <option>성동구</option>
+                    <option>성북구</option>
+                    <option>송파구</option>
+                    <option>양천구</option>
+                    <option>영등포구</option>
+                    <option>용산구</option>
+                    <option>은평구</option>
+                    <option>종로구</option>
+                    <option>중구</option>
+                    <option>중랑구</option>
+                </select>
+            </div>
+            <br>
             <div class="map_wrap">
-                <div id="map" style="width:auto;height:650px;position:relative;overflow:hidden;"></div>
+                <div id="map" style="width:100%;height:650px;position:relative;overflow:hidden;"></div>
                 <ul id="category">
                     <li id="CE7" data-order="4">
                         <span class="category_bg cafe"></span>
+                        카페
                     </li>
                 </ul>
             </div>
-
             <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7baca3bb9b78c8e4f475fe79b3d9215b&libraries=services"></script>
             <script>
                 // 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
@@ -278,43 +264,42 @@
                     searchPlaces();
                 }
             </script>
+            <div id ="footer">
+                <h3>TOP5</h3>
+                <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
+                <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
+                <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
+                <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
+                <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
+            </div>
         </div>
-        <div id ="footer">
-            <h3>TOP5</h3>
-            <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
-            <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
-            <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
-            <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
-            <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
+        <div class="right">
+            <div id = "search">
+                <input id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
+                <button id ="sb"><img id="search_image" src="img/search.png"  width=80%;></button>
+            </div>
+            <br>
+            <div id="sidebar" style="overflow: scroll;">
+                <div id="top_10">
+                    <h3>TOP10</h3>
+                    <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
+                    <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
+                    <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
+                    <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
+                </div>
+                <div id="top_review">
+                    <h3>리뷰수</h3>
+                    <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
+                    <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
+                </div>
+                <div id="top_tag">
+                    <h3>#태그</h3>
+                    <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
+                    <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="right">
-      <div id = "search">
-        <input id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
-        <button id ="sb"><img id="search_image" src="img/search.png"  width=80%;></button>
-      </div>
-      <br>
-        <div id="sidebar" style="overflow: scroll;">
-            <div id="top_10">
-                <h3>TOP10</h3>
-                <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
-                <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
-                <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
-                <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
-            </div>
-            <div id="top_review">
-                <h3>리뷰수</h3>
-                <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
-                <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
-            </div>
-            <div id="top_tag">
-                <h3>#태그</h3>
-                <a href="info.html"><img  src="img/hollys.JPG"  width=150px;></a>
-                <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
-            </div>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
