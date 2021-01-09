@@ -1,16 +1,12 @@
 <!doctype html>
 <style>
-    div.container{
-        width: 100%;
-    }
     .left{
-        width: 55%;
+        width: 70%;
         float: left;
     }
     .right{
-        width: 40%;
+        width:25%;
         float: right;
-        margin-right: 15px;
         margin-bottom: 30px;
     }
     /* top 10 */
@@ -24,15 +20,15 @@
     @media(max-width:1000px){
         div.left{
             width: 100%;
-            float: none;
+            float: left;
             position: relative;
-            margin: 10px;
+            margin-right: 100px;;
         }
         div.right{
-            float: none;
+            float: right;
             width: 100%;
             position: relative;
-            left: 20px;
+            margin-left: 100px;;
         }
   }
   ul{
@@ -72,8 +68,7 @@
                                    width=40px; style="position: absolute; right: 20px; top: 10px; "></a>
     </div>
     <br>
-    <div class="container">   
-        <div class="left">
+        <div class="left"style="margin-left: 20px; float : left;padding: 0px;">
             <div id = "select">
                 <select style="font-family: arial;font-size: 0.7em;" id ="sl"style="position: left">
                     <option style="font-family: arial;">강남구</option>
@@ -126,9 +121,10 @@
                 <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
                 <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
                 <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
+                <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
             </div>
         </div>
-        <div class="right">
+        <div class="right"style="margin-right: 20px; float:right;" >
             <div id = "search">
                 <input style="height:37px;font-family: arial;font-size: 0.7em;" id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
                 <button id ="sb"><img id="search_image" src="img/search.png"  width=80%;></button>
@@ -153,7 +149,7 @@
                     <a href="info.html"><img  src="img/starbucks.jpg"  width=150px;></a>
                 </div> -->
             </div>
-        </div>
+      
     </div>
     <div class="left">   
         <br>
@@ -164,7 +160,7 @@
         <br>
         <br>
         <br>
-        <p style="font-family: arial;text-align: right;color: gray;font-size: 0.7em;">Copyright © 2021 by Cafemore, Inc. All rights reserved</p>
+        <p style="font-family: arial;text-align:center;color: gray;font-size: 0.7em;">Copyright © 2021 by Cafemore, Inc. All rights reserved </p>
     </div>
 </body>
 </html>
