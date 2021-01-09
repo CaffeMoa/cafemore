@@ -1,95 +1,106 @@
 <!doctype html>
+<style>
+    div.container{
+        width: 100%;
+    }
+    .left{
+        width: 55%;
+        float: left;
+    }
+    .right{
+        width: 40%;
+        float: right;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+    /* top 10 */
+    #sidebar {
+        /* width: 500px; */
+        height: 750px;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #bcbcbc;
+    }
+    @media(max-width:1000px){
+        div.left{
+            width: 100%;
+            float: none;
+            position: relative;
+            margin: 10px;
+        }
+        div.right{
+            float: none;
+            width: 100%;
+            position: relative;
+            left: 20px;
+        }
+  }
+  ul{
+        list-style:none;
+    }
+</style>
 <html xmlns:th="http://www.thymeleaf.org">
 <html lang="ko">
 <head>
     <meta charset="utf-8">
     <title>Cafemore</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        div.container{
-            width: 100%;
-        }
-        .left{
-            width: 55%;
-            float: left;
-        }
-        .right{
-            width: 40%;
-            float: right;
-            margin-right: 15px;
-            margin-bottom: 30px;
-        }
-        /* top 10 */
-        #sidebar {
-            /* width: 500px; */
-            height: 750px;
-            padding: 5px;
-            margin-bottom: 5px;
-            border: 1px solid #bcbcbc;
-        }
-        @media(max-width:1000px){
-            div.left{
-                width: 95%;
-                float: none;
-                position: relative;
-                margin: 10px;
-            }
-            div.right{
-                float: none;
-                width: 90%;
-                position: relative;
-                left: 20px;
-            }
-      }
-      ul{
-            list-style:none;
-        }
-    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+     <!-- Custom fonts for this template -->
+     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+ 
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet"> 
 </head>
 <body>
     <div id="header">
-        <!--로고 이미지 -->
-        <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
-        <!--카페 검색 -->
-        <a href="search.html"><img src="img/cafesearch.png" onmouseover="this.src='img/cafesearch_hover.png'"
-            onmouseout="this.src='img/cafesearch.png'" width=130px;></a>
-        <!--회원가입-->
-        <a href="login.html" style="position: absolute; right: 80px; top: 30px;"><img src="img/loginfont.png" onmouseover="this.src='img/loginfont_hover.png'"
-            onmouseout="this.src='img/loginfont.png'" width=130px;></a>
-        <!--프로필-->
-        <a href="profile.html"><img id="profile_image" src="img/profile.png" 
-                                    width=40px; style="position: absolute; right: 20px; top: 20px; "></a>
+       <!--로고 이미지 -->
+       <a href="main.html"><img id="logo_image" src="img/logo.png"></a>
+       <!--카페 검색 -->
+       <a href="search.html" style="position: absolute; left: 200px; top: 7px;"><img src="img/cafesearch.png" onmouseover="this.src='img/cafesearch_hover.png'"
+           onmouseout="this.src='img/cafesearch.png'" width=130px;></a>
+       <!--회원가입-->
+       <a href="login.html" style="position: absolute; right: 80px; top: 22px;"><img src="img/loginfont.png" onmouseover="this.src='img/loginfont_hover.png'"
+           onmouseout="this.src='img/loginfont.png'" width=130px;></a>
+       <!--프로필-->
+       <a href="profile.html"><img id="profile_image" src="img/profile.png" 
+                                   width=40px; style="position: absolute; right: 20px; top: 10px; "></a>
     </div>
     <br>
     <div class="container">   
         <div class="left">
             <div id = "select">
-                <select id ="sl"style="position: left">
-                    <option>강남구</option>
-                    <option>강동구</option>
-                    <option>강북구</option>
-                    <option>강서구</option>
-                    <option>관악구</option>
-                    <option>광진구</option>
-                    <option>구로구</option>
-                    <option>금천구</option>
-                    <option>노원구</option>
-                    <option>도봉구</option>
-                    <option>동대문구</option>
-                    <option>동작구</option>
-                    <option>마포구</option>
-                    <option>서대문구</option>
-                    <option>서초구</option>
-                    <option>성동구</option>
-                    <option>성북구</option>
-                    <option>송파구</option>
-                    <option>양천구</option>
-                    <option>영등포구</option>
-                    <option>용산구</option>
-                    <option>은평구</option>
-                    <option>종로구</option>
-                    <option>중구</option>
-                    <option>중랑구</option>
+                <select style="font-family: arial;font-size: 0.7em;" id ="sl"style="position: left">
+                    <option style="font-family: arial;">강남구</option>
+                    <option style="font-family: arial;">강동구</option>
+                    <option style="font-family: arial;">강북구</option>
+                    <option style="font-family: arial;">강서구</option>
+                    <option style="font-family: arial;">관악구</option>
+                    <option style="font-family: arial;">광진구</option>
+                    <option style="font-family: arial;">구로구</option>
+                    <option style="font-family: arial;">금천구</option>
+                    <option style="font-family: arial;">노원구</option>
+                    <option style="font-family: arial;">도봉구</option>
+                    <option style="font-family: arial;">동대문구</option>
+                    <option style="font-family: arial;">동작구</option>
+                    <option style="font-family: arial;">마포구</option>
+                    <option style="font-family: arial;">서대문구</option>
+                    <option style="font-family: arial;">서초구</option>
+                    <option style="font-family: arial;">성동구</option>
+                    <option style="font-family: arial;">성북구</option>
+                    <option style="font-family: arial;">송파구</option>
+                    <option style="font-family: arial;">양천구</option>
+                    <option style="font-family: arial;">영등포구</option>
+                    <option style="font-family: arial;">용산구</option>
+                    <option style="font-family: arial;">은평구</option>
+                    <option style="font-family: arial;">종로구</option>
+                    <option style="font-family: arial;">중구</option>
+                    <option style="font-family: arial;">중랑구</option>
                 </select>
             </div>
             <br>
@@ -109,17 +120,17 @@
             <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7baca3bb9b78c8e4f475fe79b3d9215b&libraries=services"></script>
             <script type="text/javascript" src="js/map.js"></script>
             <div id ="footer">
-                <h3>TOP5</h3>
+                <br>
+                <p style="font-family: arial;text-align: left;color: rgb(46, 46, 46);font-size: 1em;font-weight: 700;">TOP5</p>
                 <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
                 <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
                 <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
                 <a href="info.html"><img  src="img/starbucks.jpg"  width=120px;></a>
-                <a href="info.html"><img  src="img/hollys.JPG"  width=120px;></a>
             </div>
         </div>
         <div class="right">
             <div id = "search">
-                <input id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
+                <input style="height:37px;font-family: arial;font-size: 0.7em;" id="ip" type="text" placeholder="찾고싶은 카페의 태그를 입력해주세요">
                 <button id ="sb"><img id="search_image" src="img/search.png"  width=80%;></button>
             </div>
             <br>
@@ -144,6 +155,17 @@
             </div>
         </div>
     </div>
-
+    <div class="left">   
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p style="font-family: arial;text-align: right;color: gray;font-size: 0.7em;">Copyright © 2021 by Cafemore, Inc. All rights reserved</p>
+    </div>
 </body>
 </html>
+
