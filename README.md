@@ -21,22 +21,22 @@
 
 - 메인 페이지
   <p>
-    <img src="https://user-images.githubusercontent.com/57933061/128974152-0c849209-bade-42e0-88d2-fccdc90df768.JPG" width="900">
+    <img src="https://user-images.githubusercontent.com/57933061/128974152-0c849209-bade-42e0-88d2-fccdc90df768.JPG" width="800">
   </p>
   <p>
-    <img src="https://user-images.githubusercontent.com/57933061/128974231-6d44a650-79f6-45ae-863c-e395fd267c20.JPG" width="900">
+    <img src="https://user-images.githubusercontent.com/57933061/128974231-6d44a650-79f6-45ae-863c-e395fd267c20.JPG" width="800">
   </p>
 - 검색 페이지
   <p>
-    <img src="https://user-images.githubusercontent.com/57933061/128974277-bd8f0a17-7ee8-4917-9a6c-c54e26f917d4.JPG" width="900">
+    <img src="https://user-images.githubusercontent.com/57933061/128974277-bd8f0a17-7ee8-4917-9a6c-c54e26f917d4.JPG" width="800">
   </p>
 - 로그인/회원가입 페이지
   <p>
-    <img src="https://user-images.githubusercontent.com/57933061/128974314-4815276a-97b6-402e-952c-6b1b1bf0483b.JPG" width="900">
+    <img src="https://user-images.githubusercontent.com/57933061/128974314-4815276a-97b6-402e-952c-6b1b1bf0483b.JPG" width="800">
   </p>
 - 마이 페이지
   <p>
-    <img src="https://user-images.githubusercontent.com/57933061/128974379-e3dcab93-e273-4e0b-b15d-4354c26c3199.JPG" width="900">
+    <img src="https://user-images.githubusercontent.com/57933061/128974379-e3dcab93-e273-4e0b-b15d-4354c26c3199.JPG" width="800">
   </p>
 <br>
 
