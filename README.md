@@ -23,6 +23,7 @@
   <p>
     <img src="https://user-images.githubusercontent.com/57933061/128974152-0c849209-bade-42e0-88d2-fccdc90df768.JPG" width="800">
   </p>
+- 메인 페이지 (스크롤)
   <p>
     <img src="https://user-images.githubusercontent.com/57933061/128974231-6d44a650-79f6-45ae-863c-e395fd267c20.JPG" width="800">
   </p>
