@@ -20,6 +20,7 @@
 ------
 
 - 메인 페이지
+  <p>
     <img src="https://user-images.githubusercontent.com/57933061/128974152-0c849209-bade-42e0-88d2-fccdc90df768.JPG" width="700">
   </p>
   <p>
